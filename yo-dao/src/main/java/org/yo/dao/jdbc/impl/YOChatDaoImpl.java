@@ -42,6 +42,7 @@ public class YOChatDaoImpl extends JdbsSupport implements YOChatDao {
 	@Override
 	public List<YOChat> listChatByReceiver(Long user, YOChatType type)throws DataAccessException {
 		// TODO Auto-generated method stub
+		
 		return this.getJdbcTemplate().query(QUERY_BY_RECEIVER, new Object[]{user, type.value()}, new YOChatMapper());
 	}
 
