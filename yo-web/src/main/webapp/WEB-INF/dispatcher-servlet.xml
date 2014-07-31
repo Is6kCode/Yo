@@ -21,6 +21,9 @@
      <bean id="listJson" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
       <property name="renderedAttributes" value="json" />  
     </bean>  
+    <bean class="org.springframework.web.servlet.view.BeanNameViewResolver">  
+    <property name="order" value="1" />  
+   </bean>  
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/views/" />  
