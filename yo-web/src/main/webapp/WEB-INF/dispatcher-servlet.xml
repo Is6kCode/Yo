@@ -18,6 +18,8 @@
   
     <mvc:annotation-driven />  
     <context:component-scan base-package="org.yo.web" />  
+        <context:component-scan base-package="org.yo.rpc" />  
+    
      <bean id="listJson" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
       <property name="renderedAttributes" value="json" />  
     </bean>  

@@ -3,6 +3,8 @@ package org.yo.web;
 public class ServerResponse {
 
 	private Long retCode;
+	private String message;
+	private Object data;
 	public Long getRetCode() {
 		return retCode;
 	}
@@ -21,6 +23,5 @@ public class ServerResponse {
 	public void setData(Object data) {
 		this.data = data;
 	}
-	private String message;
-	private Object data;
+
 }

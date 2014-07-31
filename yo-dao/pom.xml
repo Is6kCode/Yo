@@ -8,6 +8,7 @@
 		<artifactId>yo</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	
 	<groupId>com.smart.daos</groupId>
 	<artifactId>yo-daos</artifactId>
 	<version>${yo.version}</version>
